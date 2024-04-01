@@ -13,7 +13,7 @@ namespace ShopManagement.Domain.ProductCategoryAgg
         void Create(ProductCategory productCategory);
         ProductCategory GetById(long id);
         EditProductCategory Get(long id);
-        List<ProductCategoryViewModel> GetProductCategories();
+        List<ProductCategory> GetProductCategories();
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel search);
         bool Exists(Expression<Func<ProductCategory,bool>> exp);
         void SaveChanges();
